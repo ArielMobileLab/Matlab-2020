@@ -3,8 +3,8 @@ function pMWL = probability_of_metal_load_EEG(EEG_t)
 EEG_t=double(EEG_t*1.0);
 
 %Normaly we will take these values from baseline measurements
-Mean_EEG=0.242658794624925;
-sd_EEG=0.002933776838910; % must be positive 
+Mean_EEG=0.2;
+sd_EEG=0.0084; % must be positive 
 % sd_Ratio=1; 
 
 
@@ -17,7 +17,6 @@ Mean_EEG_2=Mean_EGG_2*smoothing_factor+(1-smoothing_factor)*EEG_t^2;
 % 
 % % standard deviation=(E(x^2)-E(x)^2)^0.5
 sd_EEG=(Mean_EEG_2-Mean_EEG^2)^0.5; 
-disp(sd_EEG);
 %version 1
 % pMWL=double(1.0/(1.0+exp(-(Ratio_t-Mean_Ratio+sd_Ratio)/sd_Ratio)));
 

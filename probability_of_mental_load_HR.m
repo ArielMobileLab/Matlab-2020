@@ -3,8 +3,8 @@ function pMWL = probability_of_mental_load_HR(HR_t)
 HR_t=double(HR_t*1.0);
 
 %Normaly we will take these values from baseline measurements
-MeanHR=69.696296296296300;
-SdHR=5.407670166344398;
+MeanHR=73.84;
+SdHR=6.98;
 % SdHR=5.341966052605496/sqrt(1000);
 % 
 % %Exponential smoothness for mean HR and mean HR^2
